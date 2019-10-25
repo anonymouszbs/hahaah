@@ -1,0 +1,81 @@
+import 'package:flutter/material.dart';
+import 'dart:async';
+
+import 'package:flutter/services.dart';
+import 'package:flutter_aes_ecb_pkcs5/flutter_aes_ecb_pkcs5.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  String _platformVersion = 'Unknown';
+
+  @override
+  void initState() {
+    super.initState();
+    initPlatformState();
+  }
+
+  // Platform messages are asynchronous, so we initialize in an async method.
+  Future<void> initPlatformState() async {
+
+    print("世界你好");
+    String code = "8867B30BD27CC1A0D30D12A4CD097B5035136F6640B118B8F2D7204BB1E0E2773F9EB6BDE51351C63B05622A023FA0E93D4653CB4B08173E00266A105297B8137067EAB6F68BED1B67E971DFE2569F3F5AA0FDE0247F25ADA15AA518278615DDB5EE1A82FBEE853FF2B8333B200A6EAD441437BC39C339C99C6438A4EA4FB6D2E5DC4A4DCE2278FF71B4A8B8964ADF21CAF6283AB1607D6E9E5AEC2A50981C272F5165BD2892DA25556B47523581300E3F5F43ED2900B87B22AF14C5C017D2D97F690172F0D276132FCD158F3D5CA6E533F7956430A2F6D2DF0630C4F185A7B3B3DB9FF0D952A6EE46D3E7DF07BD1E979D8AF605023A3DD18ED824A41FDC377384E0BD4A5B8155F359A40139F9630F8B159093259BB5D69C6101474983045A4E89E6C3EB2FD5B84EBF43DB6B9589E6493703B07C7ACF80B7A24DA0873EE46B78E0D4FFA3BFCBF9AAD97B4B9863CE0DC3EF92578E3FDFC4ABC85D1601FE8B3E30D9B942662889911F1B14E8B263FD752806117F26E058BB87DBFE5EEE6B963B395F078AEBF9949C5BD9AFB16284A92D094C625344D0884DCCA70D86976633B629A1FE4565C7A5CF169E1C1D0B9E9377411ECB65D27599B10A98A19191879B06E31B6CA983058E255C7DA0664AD662F1A9A87D97CD7F81738C272A78EF83E2ED86795FD00C0534F00C0D7BD486FD9ECE453D76BCDF1084DA0511E63A3C6692FE4ED7E35F47AA060F4EF6D570548DB75A6E6827316A4417B1728F71FF6D0D7D09C73ED7F4EA9264A00208F4D0B03956D3AFB60CBC21F7679B9EAD008C0EEA60C763981A2BD4418655892AD5BE588B8014DAA46089BDB39A7D8755AE1EAB31862CAA7BB0F67BDB31090B2BECD797B06182B4FD1384BEFA91F9F48E7CA877E707676764EA05DF4AF9C66AB3B4B9F243675BBE277CC9A05E280DA7157C36EBC7AAF09FCABCA4C5E4DCC6F7126984C273EEC465796DC5F392E9016C490ABBE472CE8D0A39D9A79E0A7FB0BE471E8C4F760F0A53D7CAEE774705DE3C5FE0F48D2B05824B7A1FD1CFE0D5776BB6DAC6D530907C471B155F8B5040BB22E2F15B157B04E6009E5F3DA6C6C940E6AFAB68757E0A071652D9A81024B305B007DA15B6D4442F81B5EB31618069A0DE1227DF731F9D171A9097E75885C5EC204C7A8742BAE2228CD5A165EB297A2F185A430179E5C85AD7E21C20A41DF9632F2D5BBABD9385F70B";
+    var decryptText  = await FlutterAesEcbPkcs5.decryptString(code, "ZjG5eI54A6L9yLab","6MgKWKZPzAwN5kCd");
+    print(decryptText);
+    String platformVersion;
+
+    int count = 0;
+    for(int i=0;i<100;i++){
+
+      var data = "{\"username\":\"helloword\"}";
+
+      //生成16字节的随机密钥
+      var key = await FlutterAesEcbPkcs5.generateDesKey(128);
+
+      print(key);
+      //加密
+      var encryptText = await FlutterAesEcbPkcs5.encryptString(data, key);
+
+      print(encryptText);
+      //解密
+      //var decryptText  = await FlutterAesEcbPkcs5.decryptString(encryptText, key,iv);
+
+     /* print(decryptText);
+
+      if(decryptText == data){
+        count ++;
+      }*/
+
+    }
+    platformVersion = count.toString()+"\n";
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
+
+    setState(() {
+      _platformVersion = platformVersion;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+
+
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: Center(
+          child: Text('Running on: $_platformVersion\n'),
+        ),
+      ),
+    );
+  }
+}
