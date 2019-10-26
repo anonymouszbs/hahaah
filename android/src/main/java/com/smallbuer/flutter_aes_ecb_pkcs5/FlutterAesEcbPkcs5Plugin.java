@@ -70,10 +70,10 @@ public class FlutterAesEcbPkcs5Plugin implements MethodCallHandler {
           result.success(decoded);
         } catch (Exception e) {
           e.printStackTrace();
-          result.error("UNAVAILABLE", "Decrypt failure.", null);
+          result.error("UNAVAILABLE", "UrlDecode failure.", null);
         }
       }else{
-        result.error("NULL INPUT STRING", "Decrypt failure.", null);
+        result.error("NULL INPUT STRING", "UrlDecode failure.", null);
       }
     } else {
       result.notImplemented();

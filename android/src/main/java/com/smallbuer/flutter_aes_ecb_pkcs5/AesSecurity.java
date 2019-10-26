@@ -109,7 +109,13 @@ public class AesSecurity {
 	}
 
 	public static String urlDecode(String text){
-		return  URLDecoder.decode(text);
+		String code = null;
+		try {
+			URLDecoder.decode(text);
+			return  URLDecoder.decode(text);
+		}catch(Exception e){
+			return null;
+		}
 	}
 	/** 解密(输出结果为字符串) **/
 	public static String decrypt(String content, String password, String iv) {

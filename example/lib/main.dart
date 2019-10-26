@@ -25,8 +25,8 @@ class _MyAppState extends State<MyApp> {
 
     print("世界你好");
     String code = "%2Ftemplate%2Fmobile%2Frainbow%2Fstatic%2Fimages%2Ficon_03.png";
-    var decryptText  = await FlutterAesEcbPkcs5.UrlDecode(code);
-    print(decryptText);
+
+
     String platformVersion;
 
     int count = 0;
