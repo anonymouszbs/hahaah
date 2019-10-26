@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fd7b0e68-9cc0-4a72-b80e-82ac973029f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/AesSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/AesSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="171">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -69,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="1102">
               <caret line="60" column="33" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="33" />
             </state>
           </provider>
@@ -136,8 +135,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="267" />
-    <option name="y" value="10" />
+    <option name="x" value="240" />
+    <option name="y" value="56" />
     <option name="width" value="1440" />
     <option name="height" value="1006" />
   </component>
@@ -147,45 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -197,6 +157,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flutter_aes_ecb_pkcs5-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_aes_ecb_pkcs5-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572098834970</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add code comments">
+      <created>1572099551059</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572099551059</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -272,9 +251,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="267" y="10" width="1440" height="1006" extended-state="0" />
+    <frame x="240" y="56" width="1440" height="1006" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25289854" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2673913" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -369,6 +348,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/flutter_aes_ecb_pkcs5_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/test/widget_test.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -377,6 +363,13 @@
             <element signature="e#0#921#0" expanded="true" />
             <element signature="e#357#396#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -401,24 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/flutter_aes_ecb_pkcs5_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="171">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -479,6 +458,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
