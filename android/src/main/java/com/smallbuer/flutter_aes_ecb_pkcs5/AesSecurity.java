@@ -1,5 +1,6 @@
 package com.smallbuer.flutter_aes_ecb_pkcs5;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 
 
 import javax.crypto.Cipher;
@@ -107,7 +108,9 @@ public class AesSecurity {
 		return null;
 	}
 
-
+	public static String urlDecode(String text){
+		return  URLDecoder.decode(text);
+	}
 	/** 解密(输出结果为字符串) **/
 	public static String decrypt(String content, String password, String iv) {
 		byte[] data = null;
@@ -159,4 +162,6 @@ public class AesSecurity {
 		}
 		return result;
 	}
+
+
 }

@@ -57,4 +57,14 @@ class FlutterAesEcbPkcs5 {
       throw "Failed to get string encoded: '${e.message}'.";
     }
   }
+
+  static Future<String> UrlDecode(String txt) async {
+    try {
+      final String result =
+      await _channel.invokeMethod('urlDecode', {"input": txt});
+      return result;
+    } on PlatformException catch (e) {
+      throw "Failed to get string encoded: '${e.message}'.";
+    }
+  }
 }

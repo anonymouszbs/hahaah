@@ -62,6 +62,19 @@ public class FlutterAesEcbPkcs5Plugin implements MethodCallHandler {
       }else{
         result.error("NULL INPUT STRING", "Decrypt failure.", null);
       }
+    }else if(call.method.equals("urlDecode")){
+      String text = call.argument("input");
+      if (text != null) {
+        try {
+          String decoded = new AesSecurity().urlDecode(text);
+          result.success(decoded);
+        } catch (Exception e) {
+          e.printStackTrace();
+          result.error("UNAVAILABLE", "Decrypt failure.", null);
+        }
+      }else{
+        result.error("NULL INPUT STRING", "Decrypt failure.", null);
+      }
     } else {
       result.notImplemented();
     }
