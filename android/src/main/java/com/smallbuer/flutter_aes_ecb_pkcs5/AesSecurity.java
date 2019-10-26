@@ -111,9 +111,13 @@ public class AesSecurity {
 	public static String urlDecode(String text){
 		String code = null;
 		try {
-			URLDecoder.decode(text);
-			return  URLDecoder.decode(text);
+			code =  URLDecoder.decode(text);
 		}catch(Exception e){
+			e.printStackTrace();
+		}
+		if(code != null){
+			return code;
+		}else{
 			return null;
 		}
 	}

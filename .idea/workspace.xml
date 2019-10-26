@@ -7,7 +7,6 @@
     <list default="true" id="fd7b0e68-9cc0-4a72-b80e-82ac973029f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/AesSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/AesSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/FlutterAesEcbPkcs5Plugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/FlutterAesEcbPkcs5Plugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="352">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -67,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+            <state relative-caret-position="428">
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -131,8 +130,8 @@
         <option value="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/AesSecurity.java" />
         <option value="$PROJECT_DIR$/android/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5/FlutterAesEcbPkcs5Plugin.java" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart" />
+        <option value="$PROJECT_DIR$/example/lib/main.dart" />
       </list>
     </option>
   </component>
@@ -253,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572096478384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add code comments">
+      <created>1572098834970</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572098834970</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -267,9 +273,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="267" y="10" width="1440" height="1006" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25289854" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25289854" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -279,7 +284,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49927536" weight="0.26605505" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.49927536" visible="true" weight="0.26605505" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3298969" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.3299363" />
@@ -396,6 +401,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/flutter_aes_ecb_pkcs5_test.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -405,15 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_aes_ecb_pkcs5.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        <state relative-caret-position="352">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>
